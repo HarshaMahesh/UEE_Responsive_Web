@@ -4415,7 +4415,20 @@ pre code{
         width:83.33333333%
     }
     .col-lg-9{
-        width:75%
+        width:25%
+    }
+    .col-lg9{
+        width:50%
+    }
+    .col-l9{
+        width:25%
+
+    }
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
     }
     .col-lg-8{
         width:66.66666667%
@@ -9017,8 +9030,21 @@ ul.entry li{
     display:inline-block;
     margin:1px
 }
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
 ul.social-share li a{
-    background:#4fceff none repeat scroll 0 0;
+    background:#34495e none repeat scroll 0 0;
     border-radius:2px;
     color:#fff;
     display:inline-block;
@@ -9030,7 +9056,7 @@ ul.social-share li a{
 ul.entry li a{
     display:inline-block;
     color:#fff;
-    background:#009ae4;
+    background:#34495e;
     line-height:20px;
     text-align:center;
     border-radius:6px;
@@ -10897,7 +10923,7 @@ h5{
 .language-list li>a .lang{
     padding:3px;
     min-width:120px;
-    background:#009ae4;
+    background:#34495e;
     margin-right:1px
 }
 .language-list li>a:hover .lang,.language-list li>a.selected .lang{
@@ -14001,7 +14027,7 @@ html,body,h1,h2,h3,h4,h5,ul.entry li a,.html5lightbox.btn-success,.html5lightbox
     }
     .form-group .col-md-4{
         padding-right:0;
-        padding-left:15px;
+        padding-left: 30px;px;
         float:left
     }
 }
@@ -14154,4 +14180,5 @@ html,body,h1,h2,h3,h4,h5,ul.entry li a,.html5lightbox.btn-success,.html5lightbox
     ul.entry li a{
         width:120px
     }
+
 }
