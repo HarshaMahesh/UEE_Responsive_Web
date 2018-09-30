@@ -8998,8 +8998,8 @@ body>section{
     margin:0
 }
 .responsive_class_img.logo{
-    max-width:170px;
-    margin-top:10px
+    max-width:200px;
+    margin-top:40px
 }
 .entry{
     display:inline-block;
@@ -10860,8 +10860,7 @@ h5{
     -ms-user-select:none;
     user-select:none;
     -webkit-tap-highlight-color:transparent
-}
-///////// .lang-area{
+} .lang-area{
     overflow:hidden;
     margin-top:10px
 }
@@ -10870,6 +10869,12 @@ h5{
     padding:3px 15px
 }
 .lang-selector{
+    width:100%;
+    margin:15px auto 0;
+    text-align:left
+}
+.post-center{
+
     width:100%;
     margin:15px auto 0;
     text-align:center
@@ -10900,16 +10905,16 @@ h5{
     transition:500ms
 }
 .language-list li>a .first-lang{
-    border-radius:6px 0 0 6px
-}
+    border-radius:10px 10px 10px 10px
+    }
 .language-list li>a .last-lang{
     border-radius:0 6px 6px 0
 }
 .welcome-msg{
-    width:95%;
-    margin:0 auto 5px;
-    text-align:center;
-    color:#fff;
+
+    font-size:30px;
+    text-align:left;
+    color:#f8f8f8;
     clear:both
 }
 .link{
@@ -10996,13 +11001,15 @@ h5{
     background:#ff6f2b;
     -webkit-border-radius:28;
     -moz-border-radius:28;
-    border-radius:6px;
+    border-radius:50px;
     font-family:Arial;
     color:#fff;
     font-size:20px;
     padding:10px 20px;
     text-decoration:none;
     min-width:265px
+
+
 }
 .btn-info{
     background:#009ae4;
@@ -13966,9 +13973,11 @@ html,body,h1,h2,h3,h4,h5,ul.entry li a,.html5lightbox.btn-success,.html5lightbox
     .ad-list-area{
         width:95%
     }
-    .language-list li>a .first-lang,.language-list li>a .last-lang{
-        border-radius:0
-    }
+        .language-list li>a .first-lang,.language-list li>a .last-lang{
+            border-radius:0
+
+
+                }
     .language-list li{
         margin-bottom:1px
     }
@@ -13977,7 +13986,7 @@ html,body,h1,h2,h3,h4,h5,ul.entry li a,.html5lightbox.btn-success,.html5lightbox
         list-style:outside none none;
         padding:0;
         margin:0 auto;
-        text-align:center;
+        text-align:left;
         width:120px
     }
     .price-holder{
