@@ -8987,7 +8987,7 @@ body>section{
 }
 .top-bar{
     padding:5px 0 0;
-    background:#383838 none repeat scroll 0 0
+    background:#006064 none repeat scroll 0 0
 }
 .text-center{
     text-align:center
@@ -9500,7 +9500,7 @@ ul.entry li a:hover{
 }
 .menu-sidebar{
     max-width:280px;
-    background:#efefef;
+    background:#FFA726;
     padding:5px;
     border-radius:6px;
     margin:1px 0
@@ -10366,7 +10366,7 @@ ul.bg_categories{
     top:0
 }
 .promo-area{
-    background:#383838 none repeat scroll 0 0;
+    background:#006064 none repeat scroll 0 0;
     font-size:12px;
     color:#ccc
 }
@@ -10387,7 +10387,7 @@ ul.bg_categories{
 .single_foote_wid h3{
     font-size:18px;
     margin-bottom:44px;
-    color:#ff6f2b;
+    color:#FAFAFA;
     font-family:amaranthregular;
     font-weight:400
 }
@@ -11024,6 +11024,29 @@ h5{
     padding-left:15px
 }
 .btn-submit{
+    /*background:#ff6f2b;
+    -webkit-border-radius:28;
+    -moz-border-radius:28;
+    border-radius:50px;
+    font-family:Arial;
+    color:#fff;
+    font-size:20px;
+    padding:10px 20px;
+    text-decoration:none;
+    min-width:250px;
+    height: 100px;*/
+    background-color: #ff6f2b; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 400px;
+
+}
+.btn-other{
     background:#ff6f2b;
     -webkit-border-radius:28;
     -moz-border-radius:28;
@@ -11033,7 +11056,7 @@ h5{
     font-size:20px;
     padding:10px 20px;
     text-decoration:none;
-    min-width:265px
+    min-width:150px
 
 
 }
@@ -11047,7 +11070,7 @@ h5{
 }
 .btn-submit:hover{
     border-radius:6px;
-    background:#ffffff;
+    background:#009ae4;
     transition:500ms
 }
 .html5lightbox.btn-success{
@@ -11826,7 +11849,7 @@ button,input,select,textarea{
 }
 .inner-catagory ul li,.inner-search ul li,.inner-catgry ul li{
     padding-left:0;
-    background:#fafafa none repeat scroll 0 0;
+    background:#00838F none repeat scroll 0 0;
     display:block;
     list-style:outside none none;
     margin-bottom:3px;
@@ -13784,8 +13807,8 @@ body.stop-scrolling{
 .ad-list-area{
     margin-bottom:15px;
     overflow:hidden;
-    background:#efefef;
-    border:1px solid #aae4ff;
+    background:#FFF3E0;
+    border:1px solid #FFF3E0;
     width:95%;
     max-width:900px;
     border-radius:6px
@@ -13796,7 +13819,7 @@ body.stop-scrolling{
 .ad-list-area:hover{
     cursor:pointer;
     transition:200ms;
-    background:#f0f0f0
+    background:#FFCC80
 }
 .ad-list-area.highlight:hover{
     cursor:pointer;
@@ -14012,8 +14035,9 @@ html,body,h1,h2,h3,h4,h5,ul.entry li a,.html5lightbox.btn-success,.html5lightbox
         list-style:outside none none;
         padding:0;
         margin:0 auto;
-        text-align:left;
-        width:120px
+        text-align:center;
+        width:250px;
+        height: 40px
     }
     .price-holder{
         margin-top:10
