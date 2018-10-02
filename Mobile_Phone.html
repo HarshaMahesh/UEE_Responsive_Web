@@ -13,8 +13,7 @@
 <link href="https://www.myoffers.lk/favicon.ico" rel="icon" type="image/x-icon" />
 <link rel="canonical" href="https://www.myoffers.lk/" />
 <link href="wincss.css" rel="stylesheet">
- <!--Import Google Icon Font-->
-     
+
 
       
 
@@ -31,6 +30,11 @@
 
 <script>
 		  gtag('event', 'conversion', {'send_to': 'AW-961708672/1UwoCOquhXsQgIXKygM'});
+
+		  function redirectHome(){
+		  	window.open("index.html");
+		  }
+
 		</script>
 
 <script type="text/javascript">
@@ -46,6 +50,47 @@
 
 </script>
 </head>
+
+<style>
+    .vertical-menu {
+        width: 325px;
+    }
+
+    .vertical-menu a {
+        background-color: #FFF3E0;
+        color: black;
+        display: block;
+        padding: 12px;
+        text-decoration: none;
+        font-size: large;
+        font;
+    }
+
+    .vertical-menu a:hover {
+        background-color: #FFCC80;
+    }
+
+    .vertical-menu a.active {
+        background-color: #42A5F5;
+        color: white;
+    }
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px; height: 0; overflow: hidden;
+    }
+
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+</style>
+
 <body>
 
 <div id="fb-root"></div>
@@ -53,33 +98,42 @@
 <div class="top-bar" id="snow">
 <div class="container padding_left_nav">
 <div class="row">
+
 <div class="col-md-3 col-sm-3 col-xs-12 col-xxs-12 social-header">
 <div class="row">
 <a target="_self" href="file:///C:/xampp/htdocs/uee/index.html"><img class="responsive_class_img logo" src="https://www.myoffers.lk/asets/img/logo.png"></a>
-</div>
-    <div class="row">
-    <div class="lang-selector">
+    <div>
+    </br>
+    </div>
+    <div>
         <ul class="language-list">
-           <li><a href="file:///C:/xampp/htdocs/uee/index.html"><div class="lang first-lang btn ">Select Category</div></a></li>&nbsp
+            <li><a href="file:///C:/xampp/htdocs/uee/index.html"><div class="lang first-lang btn ">Select Category</div></a></li>&nbsp
             <li><a href="file:///C:/xampp/htdocs/uee/index.html"><div class="lang first-lang btn ">All Ads</div></a></li>
         </ul>
-    </div></div>
+    </div>
+</div>
+
+    <div class="row">
+   </div>
 
 </div>
 <div class="col-xs-12 col-sm-6 col-md-6 text-center lang-area">
-
     <div class="row">
-        <div class="post-center">
+        <div>
 
                 <ul class="language-list">
                <li> <div class="top-number ">
-                   <a class="btn-submit btn-lg language-list" href="https://www.myoffers.lk/ad/newAd"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> POST FREE AD</a></div></li>
+                  <a class="btn-submit btn-lg language-list" href="PostAdd.html"><span  aria-hidden="true"></span> POST FREE AD</a>
 
+
+                  </div></li>
+				
                 </ul>
 
         </div></div>
 
 </div>
+
 <div class="col-md-3 col-sm-3 col-xs-12 col-xxs-12 login-area">
 <div class="row">
 <div class="col-md-12">
@@ -284,7 +338,7 @@ link.style.display = 'none';
 
 
 <div class="panel panel-success" id="posterData">
-<div class="panel-heading">
+<div class="panel-heading" id="mb-panel-heading2">
 <div class="panel-title"><h5>Your Details</div>
 </div>
 <div class="panel-body">
@@ -329,11 +383,11 @@ link.style.display = 'none';
     <div class="row col-sm-8 col-md-8">
 <a data-toggle="lightbox" id="location_select"  href="https://www.myoffers.lk/ad/getLocations" data-width="960" data-height="600" class="html5lightbox btn btn-success btn-lg col-md-12"><i class="fa fa-map-marker"></i> <span id="locationSelect" class="locationBox">Select Location</span></a>
     </div>
-<input class="srhDistrict" type="hidden" id="district" name="post[publisher][location][district]" value="" />
-<input class="srhCity" type="hidden" id="city" name="post[publisher][location][city]" value="" />
+<input class="srhDistrict" type="hidden" id="district" name="post[publisher][location][district]" value="Colombo" />
+<input class="srhCity" type="hidden" id="city" name="post[publisher][location][city]" value="Dehiwala" />
 
 <div class="row col-sm-8 col-md-8">
-<input type="checkbox" id="location_check" name="post[location]" required="required" value="1"  onclick="location_check_();" /> I do not want to show my location
+<input type="checkbox" id="location_check" name="post[location]"  value="1"  onclick="location_check_();" /> I do not want to show my location
 </div>
 
 
@@ -356,7 +410,7 @@ link.style.display = 'none';
 <input type="hidden" name="post[adcategory][maincat]" id="category" value="003" />
 <input type="hidden" name="post[adcategory][subcat]" id="subcategory" value="075" />
 </div>
-<div class="col-sm-4 col-md-3"><button class="btn btn-submit" name="adPostSubmit" value="Publish My Ad">Publish My Ad</button></div><div class="col-sm-4 col-md-2"><button onclick="showPreview();" class="btn btn-submit btn-info" name="adPostView" value="Preview Before Publish"><i class="fa fa-eye"></i> Preview Before Publish</button></div>
+<div class="col-sm-4 col-md-3"><button class="btn btn-submit" name="" value="Publish My Ad" onclick="redirectHome()">Publish My Ad</button></div><div class="col-sm-4 col-md-2"><button onclick="showPreview();" class="btn btn-submit btn-info" name="adPostView" value="Preview Before Publish"><i class="fa fa-eye"></i> Preview Before Publish</button></div>
 </div>
 </div>
 </div>
@@ -382,10 +436,7 @@ link.style.display = 'none';
 <h2>If You Created a New Account, Check Your Email in Few Minutes and Click on the Activation Link We Provided to Activate Your Account!</h2>
 </div>
 <div class="well">
-<h2><strong>ඔබ අලුතින් ගිණුමක් සෑදුවේ නම් ඔබවෙත ඊමේල් පණිවුඩයක් එවා ඇත!</strong></h2>
-<h2>01. කරුණාකර මද වේලාවකින් ඔබගේ ඊමේල් ගිනුම පරීකෂාකර බලන්න. පළමුව එහි ඇති ලින්ක් එක ක්ලික් කර ගිණුම සක්‍රීය කරගන්න.</h2>
-අප විසින් SPAM පණිවුඩ නො එවනමුත් යම් හෙයකින් INBOX තුල නොතිබේ නම් Spam Box හෝ Junk Box පරීක්ෂාකර බලන්න.<br>
-මෙය දැනටමත් ඔබ සම්පූර්ණ කර ඇත්නම් මෙම නිවේදනය නොසකලකා හරින්න. එවැන් ඊමේල් පණිවුඩයක් ලැබී නැත්නම් <a class="link link-danger" href="https://www.myoffers.lk/users/reset">මෙතැන ක්ලික් කර නැවත ඊමේල් පණිවුඩය ගෙන්වා ගන්න</a>
+
 </div>
 <div class="alert alert-dismissible alert-info">
 <strong>Special Note: </strong> If you are a new member you need to activate your account before publish this advertisement. Please check your email box and follow the instruction to activate account. <br> <br>
@@ -466,10 +517,7 @@ If you did not receive email to activate your account <a href="https://www.myoff
 <div class="single_foote_wid">
 <h3>MyOffers.lk</h3>
 <div class="footer-para">MyOffers.lk is the fast growing classified website in Sri Lanka established in 2016. Our Simple Ad placement method only take less than 30sec to place a new Ad. Your Ad will get visible to thousands of daily visitors after we review and activate the advertisement. </div>
-<div class="footer-para">We continuously improve this site and you will get more facilities very soon. So why wait? Place your FREE Ad Now!</div>
-<div class="footer-para"><a target="_self" class="link link-info" href="https://www.myoffers.lk/company/Conditions">Terms &amp; Conditions</a></div>
-<h4>Sponsor Ads</h4>
-<div class="footer-para"><a target="_self" class="link link-info" href="https://www.myoffers.lk/sponsor">Click for Sponsor Advertise</a></div>
+
 <h4>Contact Us</h4>
 <div class="footer-para"><a target="_self" class="link link-info" href="https://www.myoffers.lk/lankaAds/contact">Click here to Contact Us</a></div>
 </div>
@@ -489,44 +537,65 @@ If you did not receive email to activate your account <a href="https://www.myoff
 <div class="single_foote_wid menu">
 <h3>Quick Links</h3>
 <div class="col-md-12 ">
-<div class="footer-para"><a target="_self" class="link link-info" href="https://www.myoffers.lk/">Home</a></div>
-<div class="footer-para"><a target="_self" class="link link-info" href="https://www.myoffers.lk/ad/classifieds">All ADs</a></div>
-<div class="footer-para"><a target="_self" class="link link-info" href="https://www.myoffers.lk/ad/newAd">Post New AD</a></div>
-<div class="footer-para"><a target="_self" class="link link-info" href="https://www.myoffers.lk/ad/promote">Promote AD</a></div>
-<div class="footer-para"><a target="_self" class="link link-info" href="https://www.myoffers.lk/business/directory">Business Directory</a></div>
-<div class="footer-para"><a target="_self" class="link link-info" href="https://www.myoffers.lk/ad/category">Categories and Locations</a></div>
-<div class="footer-para"><a target="_self" class="link link-info" href="https://www.myoffers.lk/company/Conditions">Terms &amp; Conditions</a></div>
-<div class="footer-para"><a target="_self" class="link link-info" href="https://www.myoffers.lk/lankaAds/contact">Contact Us / Sponsor Advertising</a></div>
+<div class="footer-para"><a target="_self" class="link link-info" href="#">Home</a></div>
+<div class="footer-para"><a target="_self" class="link link-info" href="#">All ADs</a></div>
+<div class="footer-para"><a target="_self" class="link link-info" href="#">Post New AD</a></div>
+<div class="footer-para"><a target="_self" class="link link-info" href="#">Promote AD</a></div>
+
 </div>
 </div>
 </div>
 <div class="col-md-3 col-sm-3 col-xs-12">
 <div class="single_foote_wid contact">
 <div class="footer-img">
-<a target="_self" class="link link-info" href="http://www.myoffers.lk"><img class="img-responsive" src="https://www.myoffers.lk/asets/img/logo.png" alt=" Free Ads Sri Lanka Post Free Ads, Classifieds, Advertising MyOffers.lk All Free Ads Lanka buy and sell sri lanka - Free Ads , Automobile, cars, jobs, services, mobile phones, pets, health and fitness in Sri Lanka"></a>
+<a target="_self" class="link link-info" href="#"><img class="img-responsive" src="https://www.myoffers.lk/asets/img/logo.png" alt=" Free Ads Sri Lanka Post Free Ads, Classifieds, Advertising MyOffers.lk All Free Ads Lanka buy and sell sri lanka - Free Ads , Automobile, cars, jobs, services, mobile phones, pets, health and fitness in Sri Lanka"></a>
 </div>
 </div>
 <div class="footer-para">193, Isuru Place<br>Paradise<br>Kuruwita<br>Sri Lanka</div>
-<div class="footer-para">Call : (+94) 776 937 555 (Lakshitha)</div>
-<div class="footer-para">Email : <a class="link link-info" href="/cdn-cgi/l/email-protection#274e494148674a5e484141425554094b4c"><span class="__cf_email__" data-cfemail="3851565e57785541575e5e5d4a4b165453">[email&#160;protected]</span></a></div>
-<div class="footer-para">Facebook : <a class="link link-info" href="https://www.facebook.com/MyOffer.lk/" target="_blank">facebook.com/myoffer.lk</a></div>
-<div class="footer-para">Web : <a target="_self" class="link link-info" href="http://www.myoffers.lk">www.myoffers.lk</a></div>
-<div class="col-md-12 col-sm-12 col-xs-12">
-<div class="social-icon floatleft row">
-<div class="footer-para">Follow Us On : </div>
-<ul>
-<li><a target="_blank" href="https://www.facebook.com/MyOffer.lk/"><i class="fa fa-facebook"></i></a></li>
-<li><a target="_blank" href="https://plus.google.com/+MyoffersLkAds"><i class="fa fa-google-plus"></i></a></li>
-<li><a target="_blank" href="https://www.linkedin.com/company/myoffers.lk/"><i class="fa fa-linkedin"></i></a></li>
-</ul>
 </div>
 </div>
 </div>
 </div>
 </div>
 </div>
+</section>
+
+<div class="modal" tabindex="-1" role="dialog" id="termsModal">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+ <h4 class="modal-title">Terms and Conditions</h4>
+</div>
+<div class="modal-body">
+<iframe class="terms-window" src="https://www.myoffers.lk/company/terms"></iframe>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 </div>
 </div>
+</div>
+</div>
+
+
+<div class="modal" tabindex="-1" role="dialog" id="successModal">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+ <h4 class="modal-title">Terms and Conditions</h4>
+</div>
+<div class="modal-body">
+<iframe class="terms-window" src="https://www.myoffers.lk/company/terms"></iframe>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+
+<!-- footer end-->
 </section>
 <div class="footer-area">
 <div class="container">
@@ -579,8 +648,8 @@ If you did not receive email to activate your account <a href="https://www.myoff
 </script>
 <script>
     /*LOAD FOR EDIT PAGES*/
-    var slelectedDistrict = '';
-    var slelectedCity = '';
+    var slelectedDistrict = 'aaa';
+    var slelectedCity = 'bbb';
 </script>
 <script src="https://www.myoffers.lk/asets/js/main.js"></script>
 <script type="text/javascript">

@@ -25,44 +25,101 @@
 		  gtag('js', new Date());
 
 		  gtag('config', 'AW-961708672');
+
+
+		  function functionCalled() {
+          window.open("Mobile_phone.html"); //if you want to open in new window
+          //window.location = "Mobile_phone.html"; //if you want to redirect
+     }
 		</script>
 
 <script>
 		  gtag('event', 'conversion', {'send_to': 'AW-961708672/1UwoCOquhXsQgIXKygM'});
 		</script>
 </head>
+<style>
+    .vertical-menu {
+        width: 325px;
+    }
+
+    .vertical-menu a {
+        background-color: #FFF3E0;
+        color: black;
+        display: block;
+        padding: 12px;
+        text-decoration: none;
+        font-size: large;
+        font;
+    }
+
+    .vertical-menu a:hover {
+        background-color: #FFCC80;
+    }
+
+    .vertical-menu a.active {
+        background-color: #42A5F5;
+        color: white;
+    }
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px; height: 0; overflow: hidden;
+    }
+
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+</style>
+
 <body>
+
+<div id="fb-root"></div>
 <!-- header start-->
 <div class="top-bar" id="snow">
 <div class="container padding_left_nav">
 <div class="row">
+
 <div class="col-md-3 col-sm-3 col-xs-12 col-xxs-12 social-header">
 <div class="row">
 <a target="_self" href="file:///C:/xampp/htdocs/uee/index.html"><img class="responsive_class_img logo" src="https://www.myoffers.lk/asets/img/logo.png"></a>
-</div>
-    <div class="row">
-    <div class="lang-selector">
+    <div>
+    </br>
+    </div>
+    <div>
         <ul class="language-list">
-           <li><a href="file:///C:/xampp/htdocs/uee/index.html"><div class="lang first-lang btn ">Select Category</div></a></li>&nbsp
+            <li><a href="file:///C:/xampp/htdocs/uee/index.html"><div class="lang first-lang btn ">Select Category</div></a></li>&nbsp
             <li><a href="file:///C:/xampp/htdocs/uee/index.html"><div class="lang first-lang btn ">All Ads</div></a></li>
         </ul>
-    </div></div>
+    </div>
+</div>
+
+    <div class="row">
+   </div>
 
 </div>
 <div class="col-xs-12 col-sm-6 col-md-6 text-center lang-area">
-
     <div class="row">
-        <div class="post-center">
+        <div>
 
                 <ul class="language-list">
                <li> <div class="top-number ">
-                   <a class="btn-submit btn-lg language-list" href="https://www.myoffers.lk/ad/newAd"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> POST FREE AD</a></div></li>
+                  <a class="btn-submit btn-lg language-list" href="PostAdd.html"><span  aria-hidden="true"></span> POST FREE AD</a>
 
+
+                  </div></li>
+				
                 </ul>
 
         </div></div>
 
 </div>
+
 <div class="col-md-3 col-sm-3 col-xs-12 col-xxs-12 login-area">
 <div class="row">
 <div class="col-md-12">
@@ -79,7 +136,6 @@
 </div>
 </div>
 </div>
-<!-- header end-->
 
 </section>
 
@@ -103,7 +159,7 @@
 <div class="form-group">
 <div class="col-sm-4 col-md-4"><label class="label-form pull-right" id="lbl_selectT">I want to <span class="fa fa-asterisk red-asterisk"></span><br><span class="form-hint">(Select one to proceed)</span></label></div>
 <div class="col-sm-8 col-md-8">
-<label class="sell-type"><input type="radio" id="rdbadtype" name="post[adcategory][rdbadtype]" value="1~Sell"> Sell</label><label class="sell-type"><input type="radio" id="rdbadtype" name="post[adcategory][rdbadtype]" value="2~Wanted"> Wanted</label> </div>
+<label class="sell-type"><input type="radio" id="rdbadtype" name="" value="1~Sell" onclick='functionCalled()' checked=""> Sell</label><label class="sell-type"><input type="radio" id="rdbadtype" name="" value="2~Wanted"> Wanted</label> </div>
 </div>
 
 
@@ -570,32 +626,21 @@ If you did not receive email to activate your account <a href="https://www.myoff
         $('#posterData').hide();
     $(document).on('change', 'input:radio[id^="rdbadtype"]', function(event) {
         $('#categoryAttributes').empty();
-        $('#categoryAttributes').hide();
+        //$('#categoryAttributes').hide();
         $('#posterData').hide();
         var catid = $('#subcategory').val();
-        var authcode = $('#authcode').val();
+       //var authcode = $('#authcode').val();
         var selltypeData = this.value.split('~');
         var selltype = selltypeData[0];
         var sellTypeName = selltypeData[1];
-        $.ajax
-                ({
-                    type: "POST",
-                    async: true,
-                    url: "https://www.myoffers.lk/ad/postAttributes",
-                    data: {functionname: 'getAttributes', arguments: [catid, selltype, authcode]},
-                    beforeSend: function() {
-                        $('#uploading').modal('show');
-                    },
-                    success: function(option)
-                    {
+        
                         $('#categoryAttributes').empty();
                         $('#postType').val(sellTypeName);
                         $("#categoryAttributes").append(option);
                         $("#categoryAttributes").fadeIn();
                         $('#posterData').fadeIn();
                         $('#uploading').modal('hide');
-                    }
-                });
+                 
     });
     //Limit charactors in description fields
     var text_max = '1500';
